@@ -1,0 +1,1215 @@
+<!--header.html-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <title></title>
+  <script defer src="js/bundle.js"></script>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header-wrapper">
+      <nav class="header-nav">
+        <div class="logo-mobile">
+          <svg width="56" height="13" viewBox="0 0 56 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.000859383 12.696L0.120859 11.232C0.232859 11.248 0.336859 11.272 0.432859 11.304C0.544859 11.32 0.640859 11.328 0.720859 11.328C1.23286 11.328 1.64086 11.136 1.94486 10.752C2.26486 10.368 2.50486 9.856 2.66486 9.216C2.82486 8.576 2.93686 7.856 3.00086 7.056C3.06486 6.24 3.12086 5.424 3.16886 4.608L3.38486 0.12H12.6249V12.72H10.9209V1.104L11.3529 1.608H4.48886L4.89686 1.08L4.70486 4.728C4.65686 5.816 4.56886 6.856 4.44086 7.848C4.32886 8.84 4.14486 9.712 3.88886 10.464C3.64886 11.216 3.31286 11.808 2.88086 12.24C2.44886 12.656 1.89686 12.864 1.22486 12.864C1.03286 12.864 0.832859 12.848 0.624859 12.816C0.432859 12.784 0.224859 12.744 0.000859383 12.696ZM22.6529 12.84C21.4369 12.84 20.3409 12.568 19.3649 12.024C18.4049 11.464 17.6449 10.704 17.0849 9.744C16.5249 8.768 16.2449 7.656 16.2449 6.408C16.2449 5.144 16.5249 4.032 17.0849 3.072C17.6449 2.112 18.4049 1.36 19.3649 0.816001C20.3249 0.272001 21.4209 4.76837e-07 22.6529 4.76837e-07C23.9009 4.76837e-07 25.0049 0.272001 25.9649 0.816001C26.9409 1.36 27.7009 2.112 28.2449 3.072C28.8049 4.032 29.0849 5.144 29.0849 6.408C29.0849 7.656 28.8049 8.768 28.2449 9.744C27.7009 10.704 26.9409 11.464 25.9649 12.024C24.9889 12.568 23.8849 12.84 22.6529 12.84ZM22.6529 11.328C23.5649 11.328 24.3729 11.128 25.0769 10.728C25.7809 10.312 26.3329 9.736 26.7329 9C27.1489 8.248 27.3569 7.384 27.3569 6.408C27.3569 5.416 27.1489 4.552 26.7329 3.816C26.3329 3.08 25.7809 2.512 25.0769 2.112C24.3729 1.696 23.5729 1.488 22.6769 1.488C21.7809 1.488 20.9809 1.696 20.2769 2.112C19.5729 2.512 19.0129 3.08 18.5969 3.816C18.1809 4.552 17.9729 5.416 17.9729 6.408C17.9729 7.384 18.1809 8.248 18.5969 9C19.0129 9.736 19.5729 10.312 20.2769 10.728C20.9809 11.128 21.7729 11.328 22.6529 11.328ZM32.7267 12.72V0.12H41.6547V1.608H33.9987L34.4307 1.176V12.72H32.7267ZM48.7154 12.84C47.4994 12.84 46.4034 12.568 45.4274 12.024C44.4674 11.464 43.7074 10.704 43.1474 9.744C42.5874 8.768 42.3074 7.656 42.3074 6.408C42.3074 5.144 42.5874 4.032 43.1474 3.072C43.7074 2.112 44.4674 1.36 45.4274 0.816001C46.3874 0.272001 47.4834 4.76837e-07 48.7154 4.76837e-07C49.9634 4.76837e-07 51.0674 0.272001 52.0274 0.816001C53.0034 1.36 53.7634 2.112 54.3074 3.072C54.8674 4.032 55.1474 5.144 55.1474 6.408C55.1474 7.656 54.8674 8.768 54.3074 9.744C53.7634 10.704 53.0034 11.464 52.0274 12.024C51.0514 12.568 49.9474 12.84 48.7154 12.84ZM48.7154 11.328C49.6274 11.328 50.4354 11.128 51.1394 10.728C51.8434 10.312 52.3954 9.736 52.7954 9C53.2114 8.248 53.4194 7.384 53.4194 6.408C53.4194 5.416 53.2114 4.552 52.7954 3.816C52.3954 3.08 51.8434 2.512 51.1394 2.112C50.4354 1.696 49.6354 1.488 48.7394 1.488C47.8434 1.488 47.0434 1.696 46.3394 2.112C45.6354 2.512 45.0754 3.08 44.6594 3.816C44.2434 4.552 44.0354 5.416 44.0354 6.408C44.0354 7.384 44.2434 8.248 44.6594 9C45.0754 9.736 45.6354 10.312 46.3394 10.728C47.0434 11.128 47.8354 11.328 48.7154 11.328Z" fill="#384637"/>
+          </svg>
+        </div>
+        <button class="close-menu-mobile"></button>
+        <div class="mobile-menus-wrapper">
+          <div class="mobile-menu-wrapper">
+            <div class="mobile-title">НАВИГАЦИЯ</div>
+            <ul class="main-menu">
+              <li>
+                <a href="#advantages">Преимущества</a>
+              </li>
+              <li>
+                <a href="#about">Что внутри</a>
+              </li>
+              <li>
+                <a href="#testimonials">Отзывы</a>
+              </li>
+              <li>
+                <a href="#location-section">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-menu-wrapper">
+            <div class="mobile-title">ДОКУМЕНТЫ</div>
+            <ul class="main-menu main-menu-mobile">
+              <li>
+                <a href="#">Оферта и правила размещения</a>
+              </li>
+              <li>
+                <a href="#">Политика конфиденциальности</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-menu-block">
+          <div class="mobile-title">МЕСЕНДЖЕРЫ</div>
+          <div class="socials-block">
+            <a href="#" class="social-link social-link-telegram"></a>
+            <a href="#" class="social-link social-link-whatsapp"></a>
+          </div>
+          <a href="#" data-src="modal-form" class="btn btn-dark open-modal-dialog">Арендовать домик</a>
+        </div>
+      </nav>
+      <a href="#" data-src="modal-form" class="btn btn-dark open-modal-dialog">Арендовать домик</a>
+      <button class="mobile-menu-button">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+
+
+
+<section class="main-banner">
+  <div class="container">
+    <div class="banner-content">
+      <img src="./img/main-banner-back.webp" alt="" class="back-banner back-banner-pc">
+      <img src="./img/main-banner-back-mobile.webp" alt="" class="back-banner back-banner-mobile">
+      <div class="banner-info">
+        <div class="banner-header">
+          <h1>Шале на Солнечной долине — идеальный отдых для вас</h1>
+          <div class="description">
+            <p>Простор, уют и комфорт прямо на территории горнолыжного курорта</p>
+          </div>
+        </div>
+        <a href="#" data-src="modal-form" class="btn btn-dark btn-pc open-modal-dialog">Забронировать сейчас</a>
+      </div>
+      <div class="banner-benefits">
+        <div class="benefit-item">Уединение</div>
+        <div class="benefit-item">Рядом озеро</div>
+        <div class="benefit-item">Все удобства </div>
+      </div>
+      <a href="#" data-src="modal-form" class="btn btn-dark btn-mobile open-modal-dialog">Забронировать сейчас</a>
+    </div>
+  </div>
+</section>
+
+<section class="booking-form-section">
+  <div class="container">
+    <div class="form-wrapper">
+      <div class="subtitle">СКОРЕЕ ОТДОХНУТЬ </div>
+      <h2>Выберите даты</h2>
+      <form action="">
+        <div class="custom-input custom-input-date">
+          <input type="hidden">
+          <div class="input-head">Заезд</div>
+          <div class="calendar-container">
+            <div class="calendar">
+              <div class="calendar-header"></div>
+              <div class="calendar-weekdays">
+                <div>ПН</div>
+                <div>ВТ</div>
+                <div>СР</div>
+                <div>ЧТ</div>
+                <div>ПТ</div>
+                <div>СБ</div>
+                <div>ВС</div>
+              </div>
+              <div class="calendar-days"></div>
+            </div>
+          </div>
+        </div>
+        <div class="custom-input custom-input-date">
+          <input type="hidden">
+          <div class="input-head">Выезд</div>
+          <div class="calendar-container">
+            <div class="calendar">
+              <div class="calendar-header"></div>
+              <div class="calendar-weekdays">
+                <div>ПН</div>
+                <div>ВТ</div>
+                <div>СР</div>
+                <div>ЧТ</div>
+                <div>ПТ</div>
+                <div>СБ</div>
+                <div>ВС</div>
+              </div>
+              <div class="calendar-days"></div>
+            </div>
+          </div>
+        </div>
+        <div class="custom-input custom-input-guests-count">
+          <input type="number" placeholder="Количество гостей">
+        </div>
+        <button data-src="modal-form" class="btn btn-dark open-modal-dialog">Узнать стоимость</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const dateInputs = document.querySelectorAll('.custom-input-date');
+
+    dateInputs.forEach(input => {
+      const calendarContainer = input.querySelector('.calendar-container');
+      const inputHead = input.querySelector('.input-head');
+
+      // Создаем элемент для отображения даты
+      let inputText = input.querySelector('.input-text');
+      if (!inputText) {
+        inputText = document.createElement('span');
+        inputText.className = 'input-text';
+        input.insertBefore(inputText, calendarContainer);
+      }
+
+      // Храним выбранную дату для каждого инпута
+      input.selectedDate = null;
+
+      // Показываем/скрываем календарь
+      input.addEventListener('click', function(e) {
+        e.stopPropagation();
+        dateInputs.forEach(inp => inp.classList.remove('input-active'));
+        this.classList.add('input-active');
+        generateCalendar(this);
+      });
+
+      // Закрываем календарь при клике вне его
+      document.addEventListener('click', function() {
+        dateInputs.forEach(inp => inp.classList.remove('input-active'));
+      });
+
+      // Обработчик выбора даты - вешаем на контейнер дней
+      const calendarDays = input.querySelector('.calendar-days');
+      calendarDays.addEventListener('click', function(e) {
+        const dayElement = e.target;
+
+        if (dayElement.classList.contains('calendar-day') &&
+          !dayElement.classList.contains('other-month') &&
+          dayElement.textContent !== '') {
+
+          e.stopPropagation();
+
+          const selectedDay = parseInt(dayElement.textContent);
+          const monthName = input.querySelector('.calendar-header').textContent.split(' ')[0];
+          const monthNames = [
+            'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+            'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
+          ];
+          const monthIndex = monthNames.indexOf(monthName);
+          const year = parseInt(input.querySelector('.calendar-header').textContent.split(' ')[1]);
+
+          // Сохраняем выбранную дату
+          input.selectedDate = {
+            day: selectedDay,
+            month: monthIndex,
+            year: year
+          };
+
+          // Обновляем текст
+          inputText.textContent = selectedDay + ' ' + monthName;
+
+          // Скрываем "Заезд" или "Выезд"
+          inputHead.style.display = 'none';
+
+          // Убираем selected со всех дней и добавляем к выбранному
+          const allDays = input.querySelectorAll('.calendar-day');
+          allDays.forEach(day => {
+            day.classList.remove('selected');
+          });
+          dayElement.classList.add('selected');
+
+          // Закрываем календарь
+          input.classList.remove('input-active');
+        }
+      });
+    });
+
+    function generateCalendar(input) {
+      const calendarHeader = input.querySelector('.calendar-header');
+      const calendarDays = input.querySelector('.calendar-days');
+
+      const now = new Date();
+      const currentMonth = now.getMonth();
+      const currentYear = now.getFullYear();
+
+      const monthNames = [
+        'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+        'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
+      ];
+
+      if (calendarHeader) {
+        calendarHeader.textContent = `${monthNames[currentMonth]} ${currentYear}`;
+      }
+
+      if (calendarDays) {
+        calendarDays.innerHTML = '';
+
+        const firstDay = new Date(currentYear, currentMonth, 1);
+        const lastDay = new Date(currentYear, currentMonth + 1, 0);
+        const prevMonthLastDay = new Date(currentYear, currentMonth, 0).getDate();
+
+        let firstDayOfWeek = firstDay.getDay();
+        firstDayOfWeek = firstDayOfWeek === 0 ? 6 : firstDayOfWeek - 1;
+
+        // Дни предыдущего месяца
+        for (let i = firstDayOfWeek - 1; i >= 0; i--) {
+          const dayElement = document.createElement('div');
+          dayElement.className = 'calendar-day other-month';
+          dayElement.textContent = prevMonthLastDay - i;
+          calendarDays.appendChild(dayElement);
+        }
+
+        // Дни текущего месяца
+        for (let day = 1; day <= lastDay.getDate(); day++) {
+          const dayElement = document.createElement('div');
+          dayElement.className = 'calendar-day';
+          dayElement.textContent = day;
+
+          // Проверяем, совпадает ли этот день с выбранной датой
+          if (input.selectedDate &&
+            input.selectedDate.day === day &&
+            input.selectedDate.month === currentMonth &&
+            input.selectedDate.year === currentYear) {
+            dayElement.classList.add('selected');
+          }
+
+          calendarDays.appendChild(dayElement);
+        }
+
+        // Дни следующего месяца
+        const totalCells = 42;
+        const daysSoFar = firstDayOfWeek + lastDay.getDate();
+        const nextMonthDays = totalCells - daysSoFar;
+
+        for (let day = 1; day <= nextMonthDays; day++) {
+          const dayElement = document.createElement('div');
+          dayElement.className = 'calendar-day other-month';
+          dayElement.textContent = day;
+          calendarDays.appendChild(dayElement);
+        }
+      }
+    }
+
+    dateInputs.forEach(input => generateCalendar(input));
+  });
+</script>
+
+<section class="advantages" id="advantages">
+  <div class="container">
+    <div class="subtitle">ПРЕИМУЩЕСТВА</div>
+    <h2>Почему именно мы</h2>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="advantage-card">
+          <div class="card-title">
+            Простор
+            <br>
+            и комфорт</div>
+          <div class="card-description">
+            <p>2 этажа, 2 спальни, антресоль, терраса, вмещает до 8 гостей</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="advantage-card">
+          <img src="./img/advantage-card-image.webp" alt="advantage-card-image" class="decor-card-image">
+          <div class="card-title">
+            Природа
+            <br>
+            рядом
+          </div>
+          <div class="card-description">
+            <p>закрытый коттеджный поселок, тишина и безопасность</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="advantage-card">
+          <div class="card-title">
+            Полная готовность
+            <br>
+            к проживанию
+          </div>
+          <div class="card-description">
+            <p>кухня, техника, Wi-Fi, кондиционер, ТВ, стиральная машина</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="advantage-card">
+          <div class="card-title">
+            Прямое
+            <br>
+            бронирование
+          </div>
+          <div class="card-description">
+            <p>без посредников, залог 5000 ₽, прозрачные правила</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about slider-section" id="about">
+  <div class="container">
+    <div class="subtitle">О ТАУНХАУСЕ</div>
+    <h2>Двухуровневое шале для всей компании</h2>
+    <div class="images-slider-container">
+      <div class="images-slider">
+        <img src="./img/gallery-image-1.png" alt="gallery-image-1">
+        <img src="./img/gallery-image-2.png" alt="gallery-image-2">
+        <img src="./img/gallery-image-3.png" alt="gallery-image-3">
+        <img src="./img/gallery-image-4.png" alt="gallery-image-4">
+        <img src="./img/gallery-image-5.png" alt="gallery-image-5">
+        <img src="./img/gallery-image-2.png" alt="gallery-image-10">
+        <img src="./img/gallery-image-3.png" alt="gallery-image-11">
+        <img src="./img/gallery-image-4.png" alt="gallery-image-12">
+        <img src="./img/gallery-image-5.png" alt="gallery-image-13">
+      </div>
+    </div>
+    <div class="details-block">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-m-12">
+          <div class="detail-card detail-card-left">
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="./img/options-icons/option-ico1.svg" alt="option-ico-1">
+              </div>
+              <div class="card-title">Количество комнат: 2</div>
+            </div>
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="./img/options-icons/option-ico2.svg" alt="option-ico-2">
+              </div>
+              <div class="card-title">Количество комнат: 2</div>
+            </div>
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="./img/options-icons/option-ico3.svg" alt="option-ico-3">
+              </div>
+              <div class="card-title">Площадь участка: 1 сот.</div>
+            </div>
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="./img/options-icons/option-ico4.svg" alt="option-ico-4">
+              </div>
+              <div class="card-title">Этажей в доме: 2</div>
+            </div>
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="./img/options-icons/option-ico5.svg" alt="option-ico-5">
+              </div>
+              <div class="card-title">Терраса или веранда: есть</div>
+            </div>
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="./img/options-icons/option-ico6.svg" alt="option-ico-6">
+              </div>
+              <div class="card-title">Санузел: в доме</div>
+            </div>
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="./img/options-icons/option-ico7.svg" alt="option-ico-7">
+              </div>
+              <div class="card-title">Коммуникации: электричество, отопление, канализация</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-m-12">
+          <div class="detail-card detail-card-right">
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="/img/options-icons/option-ico8.svg" alt="option-ico-8">
+              </div>
+              <div class="card-title">Техника: кондиционер, холодильник, плита, микроволновка, стиральная машина, телевизор, фен, утюг</div>
+            </div>
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="/img/options-icons/option-ico9.svg" alt="option-ico-9">
+              </div>
+              <div class="card-title">Интернет и ТВ: Wi-Fi, телевидение</div>
+            </div>
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="/img/options-icons/option-ico10.svg" alt="option-ico-10">
+              </div>
+              <div class="card-title">Парковка: парковочное место</div>
+            </div>
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="/img/options-icons/option-ico11.svg" alt="option-ico-11">
+              </div>
+              <div class="card-title">Инфраструктура: магазин</div>
+            </div>
+            <div class="card-option">
+              <div class="card-ico">
+                <img src="/img/options-icons/option-ico12.svg" alt="option-ico-12">
+              </div>
+              <div class="card-title">Расстояние до центра города: 9 км</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section aside id>
+
+<section class="location-benefits">
+  <div class="container">
+    <div class="subtitle">ЧТО НА ТЕРРИТОРИИ</div>
+    <h2>Природа, тишина и удобство рядом</h2>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="benefit-card">
+          <div class="card-image">
+            <img src="./img/benefit-card1.webp" alt="">
+          </div>
+          <div class="card-title">
+            Беседка для завтраков
+            <br>
+            и вечерних посиделок
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="benefit-card">
+          <div class="card-image">
+            <img src="./img/benefit-card2.webp" alt="">
+          </div>
+          <div class="card-title">
+            Баня, мангал,
+            <br>
+            качели
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="benefit-card">
+          <div class="card-image">
+            <img src="./img/benefit-card3.webp" alt="">
+          </div>
+          <div class="card-title">Бассейн, вся инфраструктура и магазин в шаговой доступности </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-m-12">
+        <div class="benefit-card">
+          <div class="card-image">
+            <img src="./img/benefit-card4.webp" alt="">
+          </div>
+          <div class="card-title">
+            Отдых с видом
+            <br>
+            на живописную реку </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="button-wrapper">
+      <a data-src="modal-testimonial" class="btn btn-brown open-modal-dialog" href="#">Оставить отзыв </a>
+    </div>
+    <div class="title-wrapper">
+      <h2>Отзывы наших гостей</h2>
+      <div class="description">
+        <p>Нам важно, чтобы каждый гость чувствовал себя как дома
+          <br>
+          Поделитесь своими впечатлениями — это помогает нам становиться лучше</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-12 col-m-12">
+        <div class="testimonial-card">
+          <div class="testimonial-rate">
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div class="testimonial-author">Ирина Косова</div>
+            <div class="testimonial-text">
+              <p>Отличный номер! Все необходимое есть. По возможности собственник разрешает заселиться раньше и остаться чуть позже. Рекомендую!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-m-12">
+        <div class="testimonial-card">
+          <div class="testimonial-rate">
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div class="testimonial-author">Дмитрий</div>
+            <div class="testimonial-text">
+              <p>Отличное шале, очень уютно, удобное расположение, полностью соответствует описанию, отзывчивый собственник</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 col-m-12">
+        <div class="testimonial-card">
+          <div class="testimonial-rate">
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+            <div class="star">
+              <svg width="41" height="20" viewBox="0 0 41 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2068 -17.9334C19.5736 -18.6765 20.6334 -18.6765 21.0002 -17.9334L26.4373 -6.91841C26.5829 -6.62356 26.864 -6.4191 27.1894 -6.37155L39.3497 -4.59413C40.1696 -4.47429 40.4964 -3.46645 39.9028 -2.88829L31.1053 5.68051C30.8694 5.91025 30.7618 6.24138 30.8174 6.56591L32.8934 18.6701C33.0336 19.4871 32.176 20.1101 31.4424 19.7242L20.569 14.006C20.2776 13.8528 19.9294 13.8528 19.6381 14.006L8.76465 19.7242C8.03102 20.1101 7.17347 19.4871 7.31359 18.6701L9.3896 6.56591C9.44526 6.24138 9.3376 5.91025 9.10173 5.68051L0.304194 -2.88829C-0.289399 -3.46645 0.0373845 -4.47429 0.857299 -4.59413L13.0176 -6.37155C13.343 -6.4191 13.6242 -6.62356 13.7697 -6.91841L19.2068 -17.9334Z" fill="#384637" fill-opacity="0.9"/>
+              </svg>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div class="testimonial-author">Алена</div>
+            <div class="testimonial-text">
+              <p>Отличный дом для отдыха! Приезжали
+                на выходные, всё прошло супер. В доме чистота, порядок, есть вся техника. Чувствовали себя как дома. Идеально
+                для тех, кто хочет расслабиться. Обязательно вернемся!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button-wrapper-bottom">
+      <a href="#" class="btn btn-dark">Читать все отзывы</a>
+    </div>
+  </div>
+</section>
+
+<section class="booking-form-section">
+  <div class="container">
+    <div class="form-wrapper">
+      <div class="subtitle">СКОРЕЕ ОТДОХНУТЬ </div>
+      <h2>Выберите даты</h2>
+      <form action="">
+        <div class="custom-input custom-input-date">
+          <input type="hidden">
+          <div class="input-head">Заезд</div>
+          <div class="calendar-container">
+            <div class="calendar">
+              <div class="calendar-header"></div>
+              <div class="calendar-weekdays">
+                <div>ПН</div>
+                <div>ВТ</div>
+                <div>СР</div>
+                <div>ЧТ</div>
+                <div>ПТ</div>
+                <div>СБ</div>
+                <div>ВС</div>
+              </div>
+              <div class="calendar-days"></div>
+            </div>
+          </div>
+        </div>
+        <div class="custom-input custom-input-date">
+          <input type="hidden">
+          <div class="input-head">Выезд</div>
+          <div class="calendar-container">
+            <div class="calendar">
+              <div class="calendar-header"></div>
+              <div class="calendar-weekdays">
+                <div>ПН</div>
+                <div>ВТ</div>
+                <div>СР</div>
+                <div>ЧТ</div>
+                <div>ПТ</div>
+                <div>СБ</div>
+                <div>ВС</div>
+              </div>
+              <div class="calendar-days"></div>
+            </div>
+          </div>
+        </div>
+        <div class="custom-input custom-input-guests-count">
+          <input type="number" placeholder="Количество гостей">
+        </div>
+        <button data-src="modal-form" class="btn btn-dark open-modal-dialog">Узнать стоимость</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="container">
+    <div class="subtitle">ВОПРОС-ОТВЕТ</div>
+    <h2>Мы собрали здесь ответы на вопросы, которые звучат чаще всего</h2>
+    <div class="accordion-block">
+      <div class="accordion-column">
+        <div class="accordion-item">
+          <div class="accordion-item-header">Можно ли приезжать с детьми?</div>
+          <div class="accordion-item-content">
+            <div class="accordion-content-wrapper">
+              <p>Да, конечно! Наш домик прекрасно подходит для отдыха с детьми.
+                Здесь безопасно, спокойно и просторно — есть место поиграть, а рядом нет оживлённой дороги. Родителям будет комфортно, а детям — интересно.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Можно ли с питомцами?</div>
+          <div class="accordion-item-content">
+            <div class="accordion-content-wrapper">
+              <p>К сожалению, размещение с животными не предусмотрено. Мы очень любим животных, но заботимся о чистоте и комфорте для всех гостей, поэтому вынуждены придерживаться этого правила.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Какие условия по предоплате и залогу?</div>
+          <div class="accordion-item-content">
+            <div class="accordion-content-wrapper">
+              <p>При бронировании вносится небольшой залог — 5000 ₽, который возвращается в день выезда после проверки дома. Оплата за проживание производится при заезде (наличными или по переводу). Если бронирование через сайт — возможна онлайн-оплата.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-column">
+        <div class="accordion-item">
+          <div class="accordion-item-header">Во сколько заезд и выезд?</div>
+          <div class="accordion-item-content">
+            <div class="accordion-content-wrapper">
+              <p>Заселение — после 16:00, выезд — до 14:00. Если вам нужно заехать раньше или выехать позже, дайте знать заранее — мы постараемся пойти навстречу, если это возможно.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Можно ли курить в доме и на территории?</div>
+          <div class="accordion-item-content">
+            <div class="accordion-content-wrapper">
+              <p>Внутри дома курение строго запрещено — это правило помогает сохранять свежий воздух и уют для всех гостей. Если нужно, можно курить на улице
+                или террасе, соблюдая чистоту и меры безопасности.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Можно ли устраивать вечеринки?</div>
+          <div class="accordion-item-content">
+            <div class="accordion-content-wrapper">
+              <p>Мы поддерживаем атмосферу тишины и уюта, поэтому проведение шумных мероприятий не допускается. Дом идеально подойдёт для спокойного отдыха, семейных встреч или романтических выходных.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="location-section" id="location-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-m-12">
+        <div class="subtitle">ГЕОЛОКАЦИЯ</div>
+        <h2>Легко добраться</h2>
+        <div class="location-block-benefits">
+          <div class="benefit-item">
+            <div class="benefit-ico">
+              <img src="./img/icons/location-ico1.svg" alt="">
+            </div>
+            <p>Шале находится в 9 км от центра города
+              по асфальтированной дороге</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-ico">
+              <img src="./img/icons/location-ico2.svg" alt="">
+            </div>
+            <p>Парковка на территории, магазин
+              и инфраструктура курорта рядом</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-ico">
+              <img src="./img/icons/location-ico3.svg" alt="">
+            </div>
+            <p>Адрес: Челябинская обл., Миасский г.о.,
+              с. Сыростан, Известная ул., 12</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-m-12">
+        <div class="form-wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d808.1464979652202!2d59.97672454070109!3d55.04700968870374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YEuINCh0YvRgNC-0YHRgtCw0L0sINCd0LjQutC-0LvRjNGB0LrQsNGPINGH0LDRgdC-0LLQvdGP!5e0!3m2!1sru!2sru!4v1761738388145!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callback-section">
+  <div class="container">
+    <div class="callback-wrapper">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-m-12">
+          <div class="callback-content-wrapper" style="background-image: url(./img/callback-image.webp)">
+            <div class="callback-content">
+              <h2>Свяжитесь с нами</h2>
+              <div class="description">
+                <p>Мы всегда на связи и поможем с бронированием</p>
+              </div>
+              <div class="callback-links">
+                <a href="tel:79911740235">+7 991-174-02-35</a>
+                <a href="mailto:taunhousegmail.com">taunhousegmail.com</a>
+              </div>
+              <div class="socials-block">
+                <a href="#" class="social-link social-link-telegram"></a>
+                <a href="#" class="social-link social-link-whatsapp"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-m-12">
+          <div class="form-wrapper">
+            <div class="wpcf7 js" id="wpcf7-f27-o1" lang="ru-RU" dir="ltr" data-wpcf7-id="27">
+              <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+              <form action="" method="post" class="wpcf7-form init" aria-label="Контактная форма" novalidate="novalidate" data-status="init">
+                <fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="27"><input type="hidden" name="_wpcf7_version" value="6.1.2"><input type="hidden" name="_wpcf7_locale" value="ru_RU"><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f27-o1"><input type="hidden" name="_wpcf7_container_post" value="0"><input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                </fieldset>
+                <p><span class="wpcf7-form-control-wrap" data-name="fullname"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="name" aria-required="true" aria-invalid="false" placeholder="Имя" value="" type="text" name="fullname"></span><br>
+                  <span class="wpcf7-form-control-wrap" data-name="phone"><input size="40" maxlength="12" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" autocomplete="tel" aria-required="true" aria-invalid="false" placeholder="Телефон" value="" type="tel" name="phone"></span><br>
+                  <span class="wpcf7-form-control-wrap" data-name="message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Комментарий" name="message"></textarea></span><br>
+                  <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Отправить"><span class="wpcf7-spinner"></span>
+                </p><div class="wpcf7-response-output" aria-hidden="true"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--footer.html-->
+</main>
+
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 col-m-12">
+          <div class="logo">
+            <svg width="56" height="13" viewBox="0 0 56 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.000859383 12.6962L0.120859 11.2322C0.232859 11.2482 0.336859 11.2722 0.432859 11.3042C0.544859 11.3202 0.640859 11.3282 0.720859 11.3282C1.23286 11.3282 1.64086 11.1362 1.94486 10.7522C2.26486 10.3682 2.50486 9.85621 2.66486 9.21621C2.82486 8.57621 2.93686 7.85621 3.00086 7.05621C3.06486 6.24021 3.12086 5.42421 3.16886 4.60821L3.38486 0.120214H12.6249V12.7202H10.9209V1.10421L11.3529 1.60821H4.48886L4.89686 1.08021L4.70486 4.72821C4.65686 5.81621 4.56886 6.85621 4.44086 7.84821C4.32886 8.84021 4.14486 9.71221 3.88886 10.4642C3.64886 11.2162 3.31286 11.8082 2.88086 12.2402C2.44886 12.6562 1.89686 12.8642 1.22486 12.8642C1.03286 12.8642 0.832859 12.8482 0.624859 12.8162C0.432859 12.7842 0.224859 12.7442 0.000859383 12.6962ZM22.6529 12.8402C21.4369 12.8402 20.3409 12.5682 19.3649 12.0242C18.4049 11.4642 17.6449 10.7042 17.0849 9.74421C16.5249 8.76821 16.2449 7.65621 16.2449 6.40821C16.2449 5.14421 16.5249 4.03221 17.0849 3.07221C17.6449 2.11221 18.4049 1.36021 19.3649 0.816214C20.3249 0.272214 21.4209 0.0002141 22.6529 0.0002141C23.9009 0.0002141 25.0049 0.272214 25.9649 0.816214C26.9409 1.36021 27.7009 2.11221 28.2449 3.07221C28.8049 4.03221 29.0849 5.14421 29.0849 6.40821C29.0849 7.65621 28.8049 8.76821 28.2449 9.74421C27.7009 10.7042 26.9409 11.4642 25.9649 12.0242C24.9889 12.5682 23.8849 12.8402 22.6529 12.8402ZM22.6529 11.3282C23.5649 11.3282 24.3729 11.1282 25.0769 10.7282C25.7809 10.3122 26.3329 9.73621 26.7329 9.00021C27.1489 8.24821 27.3569 7.38421 27.3569 6.40821C27.3569 5.41621 27.1489 4.55221 26.7329 3.81621C26.3329 3.08021 25.7809 2.51221 25.0769 2.11221C24.3729 1.69621 23.5729 1.48821 22.6769 1.48821C21.7809 1.48821 20.9809 1.69621 20.2769 2.11221C19.5729 2.51221 19.0129 3.08021 18.5969 3.81621C18.1809 4.55221 17.9729 5.41621 17.9729 6.40821C17.9729 7.38421 18.1809 8.24821 18.5969 9.00021C19.0129 9.73621 19.5729 10.3122 20.2769 10.7282C20.9809 11.1282 21.7729 11.3282 22.6529 11.3282ZM32.7267 12.7202V0.120214H41.6547V1.60821H33.9987L34.4307 1.17621V12.7202H32.7267ZM48.7154 12.8402C47.4994 12.8402 46.4034 12.5682 45.4274 12.0242C44.4674 11.4642 43.7074 10.7042 43.1474 9.74421C42.5874 8.76821 42.3074 7.65621 42.3074 6.40821C42.3074 5.14421 42.5874 4.03221 43.1474 3.07221C43.7074 2.11221 44.4674 1.36021 45.4274 0.816214C46.3874 0.272214 47.4834 0.0002141 48.7154 0.0002141C49.9634 0.0002141 51.0674 0.272214 52.0274 0.816214C53.0034 1.36021 53.7634 2.11221 54.3074 3.07221C54.8674 4.03221 55.1474 5.14421 55.1474 6.40821C55.1474 7.65621 54.8674 8.76821 54.3074 9.74421C53.7634 10.7042 53.0034 11.4642 52.0274 12.0242C51.0514 12.5682 49.9474 12.8402 48.7154 12.8402ZM48.7154 11.3282C49.6274 11.3282 50.4354 11.1282 51.1394 10.7282C51.8434 10.3122 52.3954 9.73621 52.7954 9.00021C53.2114 8.24821 53.4194 7.38421 53.4194 6.40821C53.4194 5.41621 53.2114 4.55221 52.7954 3.81621C52.3954 3.08021 51.8434 2.51221 51.1394 2.11221C50.4354 1.69621 49.6354 1.48821 48.7394 1.48821C47.8434 1.48821 47.0434 1.69621 46.3394 2.11221C45.6354 2.51221 45.0754 3.08021 44.6594 3.81621C44.2434 4.55221 44.0354 5.41621 44.0354 6.40821C44.0354 7.38421 44.2434 8.24821 44.6594 9.00021C45.0754 9.73621 45.6354 10.3122 46.3394 10.7282C47.0434 11.1282 47.8354 11.3282 48.7154 11.3282Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-m-5">
+          <nav class="footer-nav">
+            <div class="footer-title">НАВИГАЦИЯ</div>
+            <ul class="footer-menu">
+              <li>
+                <a href="#advantages">Преимущества</a>
+              </li>
+              <li>
+                <a href="#about">Что внутри</a>
+              </li>
+              <li>
+                <a href="#testimonials">Отзывы</a>
+              </li>
+              <li>
+                <a href="#location-section">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3 col-md-6 col-m-7">
+          <div class="footer-title">ДОКУМЕНТЫ</div>
+          <ul class="footer-menu">
+            <li>
+              <a href="#">Оферта и правила размещения</a>
+            </li>
+            <li>
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+            <li>
+              <a href="#">Согласие на обработку персональных данных</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12 col-m-12">
+          <div class="footer-title">МЕСЕНДЖЕРЫ</div>
+          <div class="socials-block">
+            <a href="#" class="social-link social-link-telegram"></a>
+            <a href="#" class="social-link social-link-whatsapp"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom">
+        <div class="col-lg-6 col-md-6 col-m-12">
+          <div class="footer-copy">
+            <p>2025 © Все права защищены</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-m-12">
+          <div class="footer-copy">
+            <p>Разработка сайта</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const ratingStars = document.querySelectorAll('.rate-star');
+    let currentRating = 0;
+
+    ratingStars.forEach(star => {
+      star.addEventListener('click', function() {
+        const ratingValue = parseInt(this.getAttribute('data-value'));
+        currentRating = ratingValue;
+        updateRatingDisplay();
+      });
+
+      star.addEventListener('mouseenter', function() {
+        const hoverValue = parseInt(this.getAttribute('data-value'));
+        highlightStars(hoverValue);
+      });
+
+      star.addEventListener('mouseleave', function() {
+        highlightStars(currentRating);
+      });
+    });
+
+    function highlightStars(value) {
+      ratingStars.forEach(star => {
+        const starValue = parseInt(star.getAttribute('data-value'));
+        if (starValue <= value) {
+          star.classList.add('hover');
+        } else {
+          star.classList.remove('hover');
+        }
+      });
+    }
+
+    function updateRatingDisplay() {
+      ratingStars.forEach(star => {
+        const starValue = parseInt(star.getAttribute('data-value'));
+        if (starValue <= currentRating) {
+          star.classList.add('active');
+          star.classList.remove('hover');
+        } else {
+          star.classList.remove('active');
+          star.classList.remove('hover');
+        }
+      });
+
+      let ratingInput = document.querySelector('input[name="rating"]');
+      if (!ratingInput) {
+        ratingInput = document.createElement('input');
+        ratingInput.type = 'hidden';
+        ratingInput.name = 'rating';
+        document.querySelector('form').appendChild(ratingInput);
+      }
+      ratingInput.value = currentRating;
+    }
+
+    document.querySelector('form').addEventListener('submit', function(e) {
+      if (currentRating === 0) {
+        e.preventDefault();
+        return false;
+      }
+    });
+  });
+</script>
+
+
+<div class="modal-dialog modal-form modal-opening" style="display: none;">
+  <div class="modal-content">
+    <div class="modal-body">
+      <!-- <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"></button> -->
+      <div class="modal-wrapper">
+        <div class="modal-head">
+          <div class="modal-title">
+            Ваш уютный отдых
+            в Солнечной Долине ждёт вас
+          </div>
+          <div class="modal-payment-duration">
+            <div class="modal-duration-content">
+              <div class="card-title">20:02</div>
+              <div class="description">
+                <p>
+                  Внесите предоплату как можно быстрее, пока жильё свободно. Вы будете перенаправлены на сервис оплаты. После оплаты объект будет забронирован за вами.
+                </p>
+              </div>
+            </div>
+            <div class="payment-methods">
+              <img src="./img/payment-icons/mir.svg" alt="">
+              <img src="./img/payment-icons/visa.svg" alt="">
+              <img src="./img/payment-icons/master.svg" alt="">
+              <img src="./img/payment-icons/squirrel.svg" alt="">
+              <img src="./img/payment-icons/sbp.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <form action="">
+            <div class="row">
+              <div class="col-lg-6 col-md-12 col-m-12">
+                <div class="custom-input custom-input-date">
+                  <input type="hidden">
+                  <div class="input-head">Заезд</div>
+                  <div class="calendar-container">
+                    <div class="calendar">
+                      <div class="calendar-header"></div>
+                      <div class="calendar-weekdays">
+                        <div>ПН</div>
+                        <div>ВТ</div>
+                        <div>СР</div>
+                        <div>ЧТ</div>
+                        <div>ПТ</div>
+                        <div>СБ</div>
+                        <div>ВС</div>
+                      </div>
+                      <div class="calendar-days"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-m-12">
+                <div class="custom-input custom-input-date">
+                  <input type="hidden">
+                  <div class="input-head">Выезд</div>
+                  <div class="calendar-container">
+                    <div class="calendar">
+                      <div class="calendar-header"></div>
+                      <div class="calendar-weekdays">
+                        <div>ПН</div>
+                        <div>ВТ</div>
+                        <div>СР</div>
+                        <div>ЧТ</div>
+                        <div>ПТ</div>
+                        <div>СБ</div>
+                        <div>ВС</div>
+                      </div>
+                      <div class="calendar-days"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-m-12">
+                <div class="custom-input custom-input-guests-count">
+                  <input type="number" placeholder="Количество гостей">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-m-12">
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Имя">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-m-12">
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Фамилия">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-m-12">
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Телефон">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-m-12">
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Доп. телефон (опционально)">
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-m-12">
+                <div class="input-wrapper">
+                  <input type="text" placeholder="Email (опционально)">
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-m-12">
+                <textarea placeholder="Ваши пожелания (опционально)"></textarea>
+              </div>
+              <div class="col-lg-12 col-md-12 col-m-12">
+                <div class="modal-card-price modal-card-dark">
+                  <div class="card-title">Стоимость</div>
+                  <div class="card-row">
+                    <div class="card-subtitle">За ... суток</div>
+                    <div class="card-price">20 000 ₽</div>
+                  </div>
+                  <div class="car-row">
+                    <div class="card-promo">
+                      Ввести промокод
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-m-12">
+                <div class="modal-card-price modal-card-dark">
+                  <div class="card-row">
+                    <div class="card-title">Сумма к оплате сейчас</div>
+                    <div class="card-title">20 000 ₽</div>
+                  </div>
+                  <div class="card-row">
+                    <div class="card-subtitle subtitle-w-ico">
+                      <span>Оплатить при заезде</span>
+                    </div>
+                    <div class="card-price">18 000 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-m-12">
+                <p class="terms-acceptance">
+                  Нажимая «Забронировать», вы соглашаетесь с условиями оферты Перевод
+                  без риска, Политика в области обработки персональных данных и условиями Правил проживания, Правил бронирования
+                </p>
+              </div>
+              <div class="col-lg-12 col-md-12 col-m-12">
+                <input type="submit" class="btn btn-dark" value="Забронировать">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-dialog modal-testimonial modal-opening" style="display: none;">
+  <div class="modal-content">
+    <div class="modal-body">
+      <!-- <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"></button> -->
+      <div class="testimonial-form">
+        <div class="modal-title">Оставить отзыв</div>
+        <form action="">
+          <div class="input-item">
+            <input type="text" placeholder="Имя">
+          </div>
+          <div class="input-item">
+            <input type="text" placeholder="Email">
+          </div>
+          <div class="input-item">
+            <input type="text" placeholder="Отзыв">
+          </div>
+          <div class="input-item input-item-bottom">
+            <div class="rating">
+              <div class="rate-star" data-value="1">
+                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.6033 6.06663C24.9701 5.32346 26.0299 5.32346 26.3967 6.06663L31.8338 17.0816C31.9793 17.3764 32.2605 17.5809 32.5859 17.6285L44.7462 19.4059C45.5661 19.5257 45.8929 20.5336 45.2993 21.1117L36.5018 29.6805C36.2659 29.9102 36.1583 30.2414 36.2139 30.5659L38.2899 42.6701C38.43 43.4871 37.5725 44.1101 36.8389 43.7242L25.9655 38.006C25.6741 37.8528 25.3259 37.8528 25.0345 38.006L14.1611 43.7242C13.4275 44.1101 12.57 43.4871 12.7101 42.6701L14.7861 30.5659C14.8417 30.2414 14.7341 29.9102 14.4982 29.6805L5.70068 21.1117C5.10709 20.5336 5.43387 19.5257 6.25378 19.4059L18.4141 17.6285C18.7395 17.5809 19.0207 17.3764 19.1662 17.0816L24.6033 6.06663Z" stroke="#384637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Плохо</span>
+              </div>
+              <div class="rate-star" data-value="2">
+                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.6033 6.06663C24.9701 5.32346 26.0299 5.32346 26.3967 6.06663L31.8338 17.0816C31.9793 17.3764 32.2605 17.5809 32.5859 17.6285L44.7462 19.4059C45.5661 19.5257 45.8929 20.5336 45.2993 21.1117L36.5018 29.6805C36.2659 29.9102 36.1583 30.2414 36.2139 30.5659L38.2899 42.6701C38.43 43.4871 37.5725 44.1101 36.8389 43.7242L25.9655 38.006C25.6741 37.8528 25.3259 37.8528 25.0345 38.006L14.1611 43.7242C13.4275 44.1101 12.57 43.4871 12.7101 42.6701L14.7861 30.5659C14.8417 30.2414 14.7341 29.9102 14.4982 29.6805L5.70068 21.1117C5.10709 20.5336 5.43387 19.5257 6.25378 19.4059L18.4141 17.6285C18.7395 17.5809 19.0207 17.3764 19.1662 17.0816L24.6033 6.06663Z" stroke="#384637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="rate-star" data-value="3">
+                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.6033 6.06663C24.9701 5.32346 26.0299 5.32346 26.3967 6.06663L31.8338 17.0816C31.9793 17.3764 32.2605 17.5809 32.5859 17.6285L44.7462 19.4059C45.5661 19.5257 45.8929 20.5336 45.2993 21.1117L36.5018 29.6805C36.2659 29.9102 36.1583 30.2414 36.2139 30.5659L38.2899 42.6701C38.43 43.4871 37.5725 44.1101 36.8389 43.7242L25.9655 38.006C25.6741 37.8528 25.3259 37.8528 25.0345 38.006L14.1611 43.7242C13.4275 44.1101 12.57 43.4871 12.7101 42.6701L14.7861 30.5659C14.8417 30.2414 14.7341 29.9102 14.4982 29.6805L5.70068 21.1117C5.10709 20.5336 5.43387 19.5257 6.25378 19.4059L18.4141 17.6285C18.7395 17.5809 19.0207 17.3764 19.1662 17.0816L24.6033 6.06663Z" stroke="#384637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="rate-star" data-value="4">
+                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.6033 6.06663C24.9701 5.32346 26.0299 5.32346 26.3967 6.06663L31.8338 17.0816C31.9793 17.3764 32.2605 17.5809 32.5859 17.6285L44.7462 19.4059C45.5661 19.5257 45.8929 20.5336 45.2993 21.1117L36.5018 29.6805C36.2659 29.9102 36.1583 30.2414 36.2139 30.5659L38.2899 42.6701C38.43 43.4871 37.5725 44.1101 36.8389 43.7242L25.9655 38.006C25.6741 37.8528 25.3259 37.8528 25.0345 38.006L14.1611 43.7242C13.4275 44.1101 12.57 43.4871 12.7101 42.6701L14.7861 30.5659C14.8417 30.2414 14.7341 29.9102 14.4982 29.6805L5.70068 21.1117C5.10709 20.5336 5.43387 19.5257 6.25378 19.4059L18.4141 17.6285C18.7395 17.5809 19.0207 17.3764 19.1662 17.0816L24.6033 6.06663Z" stroke="#384637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="rate-star" data-value="5">
+                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24.6033 6.06663C24.9701 5.32346 26.0299 5.32346 26.3967 6.06663L31.8338 17.0816C31.9793 17.3764 32.2605 17.5809 32.5859 17.6285L44.7462 19.4059C45.5661 19.5257 45.8929 20.5336 45.2993 21.1117L36.5018 29.6805C36.2659 29.9102 36.1583 30.2414 36.2139 30.5659L38.2899 42.6701C38.43 43.4871 37.5725 44.1101 36.8389 43.7242L25.9655 38.006C25.6741 37.8528 25.3259 37.8528 25.0345 38.006L14.1611 43.7242C13.4275 44.1101 12.57 43.4871 12.7101 42.6701L14.7861 30.5659C14.8417 30.2414 14.7341 29.9102 14.4982 29.6805L5.70068 21.1117C5.10709 20.5336 5.43387 19.5257 6.25378 19.4059L18.4141 17.6285C18.7395 17.5809 19.0207 17.3764 19.1662 17.0816L24.6033 6.06663Z" stroke="#384637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Отлично</span>
+              </div>
+            </div>
+            <input data-src="modal-testimonial-send" class="btn btn-dark open-modal-dialog" type="submit" value="Отправить">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-dialog modal-testimonial-send modal-opening" style="display: none;">
+  <div class="modal-content">
+    <div class="modal-body">
+      <!-- <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close"></button> -->
+      <div class="modal-description">
+        <p>Спасибо!</p>
+        <p>Отзыв появится на сайте после модерации</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
+
