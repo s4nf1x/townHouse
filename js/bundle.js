@@ -357,8 +357,10 @@ var swiper1 = new Swiper(".banner-slider-pc", {
   slidesPerView: 1,
   spaceBetween: 0,
   effect: "fade",
-  speed: 3000,
-  autoplay: true,
+  speed: 500,
+  autoplay: {
+    delay: 3000,
+  },
   loop: true,
 });
 
@@ -370,7 +372,9 @@ var swiper1 = new Swiper(".banner-slider-mobile", {
   slidesPerView: 1,
   spaceBetween: 0,
   effect: "fade",
-  speed: 3000,
-  autoplay: true,
+  speed: 500,
+  autoplay: {
+    delay: 3000,
+  },
   loop: true,
 });
