@@ -347,3 +347,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+
+var swiper1 = new Swiper(".banner-slider-pc", {
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+  watchSlidesProgress: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  effect: "fade",
+  speed: 3000,
+  autoplay: true,
+  loop: true,
+});
+
+var swiper1 = new Swiper(".banner-slider-mobile", {
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
+  watchSlidesProgress: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  effect: "fade",
+  speed: 3000,
+  autoplay: true,
+  loop: true,
+});
